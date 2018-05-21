@@ -1,6 +1,7 @@
 const properties = require('./nightwatch.props')
 module.exports = {
-    "src_folders" : "nightwatch/tests",    
+    "src_folders" : "tests", 
+    "page_objects_path" : "page-objects" ,   
   
     "selenium" : {
       "start_process" : true,
@@ -14,7 +15,7 @@ module.exports = {
   
     "test_settings" : {
       "default" : {
-        "launch_url" : "http://localhost",
+        "launch_url" : "http://localhost:3000",
         "selenium_port"  : 4445,
         "selenium_host"  : "localhost",
         "silent": true,
